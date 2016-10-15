@@ -20,5 +20,7 @@ function playfun(){
 }
 
 function endfun(){
-	
+	clearInterval(timer);
+	var play=document.getElementById("play");
+	play.style.background="#036";
 }
