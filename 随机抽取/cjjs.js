@@ -5,10 +5,11 @@ window.onload=function(){
 	var play=document.getElementById("play"),
 		end=document.getElementById("end");
 
-	play.onclick=fndown;
+	play.onclick=playfun;
+	end.onclick=endfun;
 }
 
-function fndown(){
+function playfun(){
 	var title=document.getElementById("title");
 	clearInterval(timer);
 	timer=setInterval(function(){
@@ -16,5 +17,8 @@ function fndown(){
 		title.innerHTML=data[random];
 	},50)
 	this.style.background="#999";
+}
 
+function endfun(){
+	
 }
