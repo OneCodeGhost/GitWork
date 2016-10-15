@@ -4,7 +4,7 @@ var data=["A","B","C","D","E","F","G"],
 window.onload=function(){
 	var play=document.getElementById("play"),
 		end=document.getElementById("end");
-	//鼠标
+	//鼠标事件
 	play.onclick=playfun;
 	end.onclick=endfun;
 }
